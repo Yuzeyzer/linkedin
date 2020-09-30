@@ -1,0 +1,11 @@
+.sidebar {
+	width: 288px;
+	padding: 16px 30px;
+}
+.menu {
+	&__item {
+		margin-top: 24px;
+		font-family: sans-serif;
+		font-weight: 700;
+	}
+}
