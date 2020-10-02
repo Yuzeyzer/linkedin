@@ -1,4 +1,5 @@
 import React from 'react';
+import Nav from './nav';
 import logo from '../../assets/logo.svg';
 import './style.scss';
 
@@ -10,19 +11,14 @@ function Sidebar() {
           <img src={logo} alt='' />
         </a>
       </div>
-      <nav>
-        <ul className='menu'>
-          <li className='menu__item'>Home</li>
-          <li className='menu__item'>My network</li>
-          <li className='menu__item'>Jobs</li>
-          <li className='menu__item'>Messaging</li>
-          <li className='menu__item'>Notifications</li>
-          <li className='menu__item'>Me</li>
-          <li className='menu__item'>Work</li>
-        </ul>
-      </nav>
+      <Nav />
     </aside>
   );
 }
 
 export default Sidebar;
+
+// index.js #1
+// index.jsx #2
+// index.ts #3
+// index.tsx #4
