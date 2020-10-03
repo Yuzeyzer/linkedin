@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import { navItems } from './const.jsx';
 
 function Nav() {
@@ -7,11 +8,10 @@ function Nav() {
       <ul className='nav__menu'>
         {navItems.map((hatam) => (
           <li className='nav__item'>
-            <a href='index.html'>
-              {console.log(hatam.icon)}
+            <Link to={hatam.link}>
               {hatam.icon}
               {hatam.name}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
